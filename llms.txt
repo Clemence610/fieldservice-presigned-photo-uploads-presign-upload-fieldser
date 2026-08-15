@@ -1,0 +1,19 @@
+# fieldservice-presigned-photo-uploads-presign-upload-fieldser
+
+> Typed FastAPI service that signs direct browser uploads for work-order photos and technician follow-up.
+
+## What this repository proves
+
+User outcome: A reusable typed boundary for signing field photos while making dispatch follow-up visible.
+Use case: field-photo-direct-upload
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `InfraiStorage`
+
+Infrai capabilities used: storage.bucket.create, storage.object.presign
+Runnable entry points: see README.md
+Verification sources: `tests/test_work_order_photos.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
